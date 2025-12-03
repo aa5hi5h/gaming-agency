@@ -1,13 +1,13 @@
 
 export const ASSETS = {
   // The Floating Purple Gem
-  heroBackground: "/video/video-card-13.mp4",  //video-card-13
+  heroBackground: "/video/video-card.mp4",  //video-card-13
   
   // The Black Cube / Structure
   aboutVisual: "/video/video-card-7.mp4",
 
   // The Mail/Envelope Icon
-  contactBackground: "/video/video-card--11.mp4",
+  contactBackground: "/video/video-7.mp4",
 
   // Service specific videos
   services: {
