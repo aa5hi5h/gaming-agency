@@ -1,7 +1,7 @@
 
 export const ASSETS = {
   // The Floating Purple Gem
-  heroBackground: "/video/video-card.mp4",  //video-card-13
+  heroBackground: "/video/card-1.mp4",  //video-card-13
   
   // The Black Cube / Structure
   aboutVisual: "/video/video-card-7.mp4",
