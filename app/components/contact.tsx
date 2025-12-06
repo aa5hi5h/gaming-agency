@@ -26,15 +26,43 @@ export const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1500);
-  };
+    
+    try{
+      console.log("FORM_DATA::::::",formData)
+      const response = await fetch('/api/contact',{
+        method: "POST",
+        headers : {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+
+      const data = await response.json()
+
+      if(!response.ok){
+        throw new Error(data.error || "Failed to send message")
+      }
+
+      setIsSuccess(true)
+
+      setFormData({
+      email: '',
+      website: '',
+      interests: [],
+      projectCategory: 'Web3 Game',
+      productStage: 'Not Live',
+      message: '',
+      budget: '',
+    });
+    }catch(error){
+       console.error('Error submitting form:', error);
+    }finally{
+      setIsSubmitting(false)
+    }
+  }
 
   if (isSuccess) {
     return (
@@ -252,4 +280,5 @@ export const Contact: React.FC = () => {
       </div>
     </section>
   );
-};
+}
+

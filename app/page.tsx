@@ -5,6 +5,7 @@ import { About } from './components/about';
 import { Services } from './components/services';
 import { Contact } from './components/contact';
 import { Footer } from './components/footer';
+import { Stats } from './components/stats';
 
 const App: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = () => {
       <Navigation />
       <main>
         <Hero />
+        <Stats />
         <About />
         <Services />
         <Contact />

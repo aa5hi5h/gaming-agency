@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-          Full-stack solutions for <span className="text-white font-semibold">iGaming</span> & <span className="text-white font-semibold">Blockchain</span>.
+          Full-stack solutions for <span className="text-white font-semibold">iGaming</span> & <span className="text-white font-semibold">Blockchain Games</span>.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -19,6 +19,13 @@ export const ASSETS = {
     gaming: "/video/video-10.mp4",
     content: "/videos/swiss-knife.mp4",      // The Game Controller  // The Swiss Army Knife    // The Shield
   },
+
+  stats: {
+    brands: "/video/card-gif-2-Picsart-BackgroundRemover.mp4", // Represents Slots/Games
+    campaigns: "/video/card-giffy-Picsart-BackgroundRemover.mp4", // Represents Chips/Money
+    creators: "/video/card-gif-3-Picsart-BackgroundRemover.mp4", // Represents Community/People
+    success: "/video/card-gif-4-Picsart-BackgroundRemover.mp4", // Represents Win/Success
+  }
 };
 
 export const SERVICES_LIST = [
@@ -78,4 +85,32 @@ export const INTEREST_OPTIONS = [
   "Marketing Project Management",
   "Social Media Marketing & Management",
   "Guerrilla Marketing"
+];
+
+
+export const STATS_DATA = [
+  {
+    id: 1,
+    value: "50+",
+    label: "Gaming Brands",
+    background: ASSETS.stats.brands,
+  },
+  {
+    id: 2,
+    value: "500+",
+    label: "Campaigns",
+    background: ASSETS.stats.campaigns,
+  },
+  {
+    id: 3,
+    value: "6000+",
+    label: "Creators Community",
+    background: ASSETS.stats.creators,
+  },
+  {
+    id: 4,
+    value: "85%",
+    label: "Success Matrix",
+    background: ASSETS.stats.success,
+  }
 ];
