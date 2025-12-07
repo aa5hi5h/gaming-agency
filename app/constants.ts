@@ -11,13 +11,12 @@ export const ASSETS = {
 
   // Service specific videos
   services: {
-    influencer: "/video/video-card-4.mp4", // The 3D Microphones
-    community: "/video/video-card-1.mp4",       // The Colorful Rings/Pills
-    seo: "/video/video-card-8.mp4",            // The Glass Layers/Arches
-    ads: "/video/video-card-10.mp4",             // The Poker Cards/Chips
-    guerrilla: "/video/video-card-12.mp4",         // The Golden/Purple Uzi
-    gaming: "/video/video-10.mp4",
-    content: "/videos/swiss-knife.mp4",      // The Game Controller  // The Swiss Army Knife    // The Shield
+    influencer: "/video/service-video-6.mp4", // The 3D Microphones
+    community: "/video/service-video-8-1.mp4",       // The Colorful Rings/Pills
+    seo: "/video/service-video-4.mp4",            // The Glass Layers/Arches
+    ads: "/video/service-video-5.mp4",             // The Poker Cards/Chips
+    guerrilla: "/video/service-video-7-1.mp4",         // The Golden/Purple Uzi
+    gaming: "/video/service-video-new.mp4",   // The Game Controller  // The Swiss Army Knife    // The Shield
   },
 
   stats: {
