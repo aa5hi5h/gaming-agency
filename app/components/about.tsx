@@ -9,7 +9,7 @@ export const About: React.FC = () => {
           
           {/* Text Content */}
           <div className="order-2 lg:order-1 relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl text-center md:text-left md:text-5xl font-bold text-white mb-8">
               Our Vision
             </h2>
             <div className="space-y-6 text-lg text-gray-400 leading-relaxed">
