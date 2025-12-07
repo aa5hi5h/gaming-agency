@@ -4,7 +4,7 @@ export const ASSETS = {
   heroBackground: "/video/card-1.mp4",  //video-card-13
   
   // The Black Cube / Structure
-  aboutVisual: "/video/video-card-7.mp4",
+  aboutVisual: "/video/controller-1.mp4",
 
   // The Mail/Envelope Icon
   contactBackground: "/video/video-7.mp4",

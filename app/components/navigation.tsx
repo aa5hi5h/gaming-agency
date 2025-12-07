@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export const Navigation: React.FC = () => {
+export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -23,7 +23,7 @@ export const Navigation: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-gaming-black/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="text-2xl font-black tracking-tighter text-white">
@@ -56,9 +56,9 @@ export const Navigation: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu with Backdrop Blur */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-gaming-black/95 backdrop-blur-xl border-b border-white/10 p-4 flex flex-col space-y-4">
+        <div className="md:hidden absolute top-full h-screen left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/10 p-4 flex flex-col space-y-4">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
@@ -73,4 +73,4 @@ export const Navigation: React.FC = () => {
       )}
     </nav>
   );
-};
+}

@@ -31,8 +31,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Visual Content - 3D Object Video */}
-          <div className="order-1 lg:order-2 relative h-[500px] w-full rounded-2xl overflow-hidden border border-white/10 group">
-             <div className="absolute inset-0 bg-[#6d28d9]/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+          <div className="order-1 lg:order-2 relative h-[500px] w-full rounded-2xl overflow-hidden  group">
              <video 
                 autoPlay 
                 muted 
@@ -42,21 +41,6 @@ export const About: React.FC = () => {
               >
                 <source src={ASSETS.aboutVisual} type="video/mp4" />
               </video>
-              
-              {/* Overlay elements */}
-              <div className="absolute bottom-6 left-6 right-6 z-20">
-                <div className="bg-black/60 backdrop-blur-xl border border-white/10 rounded-xl p-4 flex items-center justify-between">
-                  <div>
-                    <p className="text-xs text-gray-400 uppercase tracking-wider">Metric</p>
-                    <p className="text-xl font-bold text-white">Brand Growth</p>
-                  </div>
-                  <div className="h-10 w-10 rounded-full bg-[#a855f7] flex items-center justify-center shadow-[0_0_15px_rgba(168,85,247,0.6)]">
-                    <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
           </div>
 
         </div>
