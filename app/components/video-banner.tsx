@@ -10,7 +10,7 @@ export const VideoBanner: React.FC = () => {
           backgroundSize: '30px 30px',
         }}></div>
       </div>
-
+      
       {/* Video Container */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-center">
@@ -19,7 +19,8 @@ export const VideoBanner: React.FC = () => {
             muted
             loop
             playsInline
-            className="w-full max-w-[800px] h-[220px] object-cover rounded-2xl border border-white/10 shadow-[0_0_30px_rgba(168,85,247,0.2)]"
+            className="w-full max-w-[800px] h-[200px] md:h-[220px] object-cover rounded-2xl border border-white/10 shadow-[0_0_30px_rgba(168,85,247,0.2)]"
+            style={{ objectPosition: '10% center' }}
             src="/video/video-1.mp4"
           />
         </div>
@@ -27,3 +28,5 @@ export const VideoBanner: React.FC = () => {
     </section>
   );
 };
+
+export default VideoBanner;
