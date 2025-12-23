@@ -8,13 +8,13 @@ export const Footer: React.FC = () => {
     <footer className="bg-black border-t border-white/5 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
         
-        <div className="text-center md:text-left">
-        <a href="#" className="flex items-center gap-2 relative group">
+        <div className="text-center  md:text-left">
+        <a href="#" className="flex justify-center items-center gap-2 relative group">
   <div className="relative">
     <Image
       src={logo} 
       alt="Gaming Agency Logo" 
-      className="h-12 w-auto md:h-14"
+      className="h-14 w-auto md:h-16"
       width={200}
       height={56}
     />

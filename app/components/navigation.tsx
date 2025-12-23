@@ -29,29 +29,28 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center">
         <a href="#" className="flex items-center gap-2 relative group">
-  <div className="relative">
-    <Image
-      src={logo} 
-      alt="Gaming Agency Logo" 
-      className="h-14 w-auto md:h-16"
-      width={200}
-      height={56}
-    />
-    {/* Pink/Purple overlay - clipped to logo shape */}
-    <div 
-      className="absolute inset-0 bg-[#5b21b6] opacity-60 group-hover:opacity-80 transition-opacity pointer-events-none"
-      style={{
-        maskImage: `url(${logo.src})`,
-        maskSize: 'contain',
-        maskRepeat: 'no-repeat',
-        maskPosition: 'center',
-        WebkitMaskImage: `url(${logo.src})`,
-        WebkitMaskSize: 'contain',
-        WebkitMaskRepeat: 'no-repeat',
-        WebkitMaskPosition: 'center'
-      }}
-    />
-  </div>
+        <div className="relative -my-3 md:-my-4">
+  <Image
+    src={logo} 
+    alt="Gaming Agency Logo" 
+    className="h-20 w-auto md:h-24"
+    width={200}
+    height={56}
+  />
+  <div 
+    className="absolute inset-0 bg-[#5b21b6] opacity-60 group-hover:opacity-80 transition-opacity pointer-events-none"
+    style={{
+      maskImage: `url(${logo.src})`,
+      maskSize: 'contain',
+      maskRepeat: 'no-repeat',
+      maskPosition: 'center',
+      WebkitMaskImage: `url(${logo.src})`,
+      WebkitMaskSize: 'contain',
+      WebkitMaskRepeat: 'no-repeat',
+      WebkitMaskPosition: 'center'
+    }}
+  />
+</div>
 </a>
 
 <style jsx>{`
