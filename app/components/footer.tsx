@@ -1,5 +1,7 @@
 import React from 'react';
 import { Twitter, Linkedin, Mail } from 'lucide-react';
+import Image from 'next/image';
+import logo from "../../public/logo-Picsart-BackgroundRemover.jpg"
 
 export const Footer: React.FC = () => {
   return (
@@ -7,10 +9,32 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-8">
         
         <div className="text-center md:text-left">
-           <a href="#" className="text-xl font-black tracking-tighter text-white block mb-2">
-            GAMING<span className="text-[#a855f7]">.AGENCY</span>
-          </a>
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Gaming.Agency. All rights reserved.</p>
+        <a href="#" className="flex items-center gap-2 relative group">
+  <div className="relative">
+    <Image
+      src={logo} 
+      alt="Gaming Agency Logo" 
+      className="h-12 w-auto md:h-14"
+      width={200}
+      height={56}
+    />
+    {/* Pink/Purple overlay - clipped to logo shape */}
+    <div 
+      className="absolute inset-0 bg-[#5b21b6] opacity-60 group-hover:opacity-80 transition-opacity pointer-events-none"
+      style={{
+        maskImage: `url(${logo.src})`,
+        maskSize: 'contain',
+        maskRepeat: 'no-repeat',
+        maskPosition: 'center',
+        WebkitMaskImage: `url(${logo.src})`,
+        WebkitMaskSize: 'contain',
+        WebkitMaskRepeat: 'no-repeat',
+        WebkitMaskPosition: 'center'
+      }}
+    />
+  </div>
+</a>
+          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} All rights reserved.</p>
         </div>
 
         <div className="flex items-center space-x-6">
