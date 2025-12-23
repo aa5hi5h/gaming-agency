@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center space-x-6">
           <a href="#" className="text-gray-400 hover:text-white transition-colors"><Twitter size={20} /></a>
           <a href="#" className="text-gray-400 hover:text-white transition-colors"><Linkedin size={20} /></a>
-          <a href="mailto:info@gaming.agency" className="text-gray-400 hover:text-white transition-colors"><Mail size={20} /></a>
+          <a href="mailto:hello@gaming.agency" className="text-gray-400 hover:text-white transition-colors"><Mail size={20} /></a>
         </div>
       </div>
     </footer>
